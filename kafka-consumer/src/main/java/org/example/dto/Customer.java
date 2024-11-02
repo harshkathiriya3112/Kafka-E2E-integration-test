@@ -1,13 +1,21 @@
 package org.example.dto;
 
-import org.springframework.stereotype.Component;
-
-@Component
 public class Customer {
     private int id;
     private String name;
     private String email;
     private String contactNo;
+
+    public Customer(){
+
+    }
+
+    public Customer(int id, String name, String email, String contactNo) {
+        this.id = id;
+        this.name = name;
+        this.email = email;
+        this.contactNo = contactNo;
+    }
 
     public int getId() {
         return id;
